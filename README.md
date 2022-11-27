@@ -7,6 +7,12 @@ The first step to calculating a confidence interval is always to choose your lev
 
 We can tell how precise an interval estimate is judging by the width of the interval. If our confidence level is high and the resulting confidence interval is narrow, then our knowledge of the value of $\mu$ is reasonably precise. On the other hand, a very wide confidence interval, shows that we are not very certain about what we are estimating.
 
-Confidence intervals for population means are calulated using the following formula: $$\bar{x} \pm t^{*} \cdot \frac{s}{\sqrt{n}}$$
+There are many ways to calculate confidence intervals for population means, but the one used in most introductory statistics classes is as follows: $$\bar{x} \pm t^{*} \cdot \frac{s}{\sqrt{n}}$$
 
-Finally, when it comes to interpreting a confidence
+where $\bar{x}$ is the sample mean, $t^{*}$ is the $t$-critical value that corresponds to the desired confidence level, $s$ is the standard deviation of our sample, and $n$ is the sample size.
+
+Finally, when it comes to interpreting a confidence interval, think of gathering sample after sample after sample of size 100 from a normal populations and calculating a confidence interval for each sample. Both the center of the interval $(\bar{x})$ and its width (margin of error) will vary from sample to sample. However, in the long run, we will see that 95% of such confidence intervals will capture the real value of $\mu$ in between the lower limit and the upper limit.
+
+![Shows that after 100 samples, only 4 missed the true mean](images/CI_mean_capture.pdf)
+
+In the image above, I generated 100 random samples from a normal population with $\mu=7$ and computed a 95$ confidence interval for each of them. Then, I plotted each confidence interval on top of each other to see which ones captured the true mean and which ones didn't. As you can see, only 4 missed the mean, which is one fewer we would expect!

@@ -13,6 +13,6 @@ where $\bar{x}$ is the sample mean, $t^{*}$ is the $t$-critical value that corre
 
 Finally, when it comes to interpreting a confidence interval, think of gathering sample after sample after sample of size 100 from a normal populations and calculating a confidence interval for each sample. Both the center of the interval $(\bar{x})$ and its width (margin of error) will vary from sample to sample. However, in the long run, we will see that 95% of such confidence intervals will capture the real value of $\mu$ in between the lower limit and the upper limit.
 
-![Shows that after 100 samples, only 4 missed the true mean](images/CI_mean_capture.pdf)
+![After 100 samples, only 4 missed the true mean](images/CI_mean_capture.png)
 
 In the image above, I generated 100 random samples from a normal population with $\mu=7$ and computed a 95$ confidence interval for each of them. Then, I plotted each confidence interval on top of each other to see which ones captured the true mean and which ones didn't. As you can see, only 4 missed the mean, which is one fewer we would expect!

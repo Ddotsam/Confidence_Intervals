@@ -15,4 +15,4 @@ Finally, when it comes to interpreting a confidence interval, think of gathering
 
 ![After 100 samples, only 4 missed the true mean](images/CI_mean_capture.png)
 
-In the image above, I generated 100 random samples from a normal population with $\mu=7$ and computed a 95$ confidence interval for each of them. Then, I plotted each confidence interval on top of each other to see which ones captured the true mean and which ones didn't. As you can see, only 4 missed the mean, which is one fewer we would expect!
+In the image above, I generated 100 random samples from a normal population with $\mu=7$ and computed a 95% confidence interval for each of them. Then, I plotted each confidence interval on top of each other to see which ones captured the true mean and which ones didn't. The blue intervals contain the true value of $\mu$ while the orange ones don't. As you can see, only 4 missed the mean, which is one fewer than we would expect!
